@@ -1,0 +1,31 @@
+| Command  | Description                                  |
+| :------- | :------------------------------------------- |
+| `pwd`    | Prints current working directory             |
+| `ls`     | Lists files and directories                  |
+| `ls -l`  | Lists files with details (long format)       |
+| `cd`     | Change directory                             |
+| `cd ..`  | Move to parent directory                     |
+| `mkdir`  | Create new directory                         |
+| `rmdir`  | Remove empty directory                       |
+| `touch`  | Create an empty file                         |
+| `cp`     | Copy files                                   |
+| `mv`     | Move or rename files                         |
+| `rm`     | Remove files                                 |
+| `cat`    | Display contents of a file                   |
+| `echo`   | Display a line of text                       |
+| `clear`  | Clear the terminal screen                    |
+| `man`    | Show manual page for a command               |
+| `whoami` | Display current logged-in username           |
+| `date`   | Show current date and time                   |
+| `wc`     | Count lines, words, and characters in a file |
+example program shell script:
+#!/bin/bash
+echo "Enter a number:"
+read num
+
+if [ $((num % 2)) -eq 0 ]
+then
+    echo "$num is Even"
+else
+    echo "$num is Odd"
+fi
